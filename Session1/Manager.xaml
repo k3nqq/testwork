@@ -9,6 +9,13 @@
     <Grid>
         <Label x:Name="ManagerLabel" Content="Добро пожаловать," HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Height="25" Width="126"/>
         <Button x:Name="LogoutManagerBTN" Content="Выйти" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="LogoutManagerBTN_Click"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,40,10,10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>

@@ -5,13 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Session1"
         mc:Ignorable="d"
-        Title="CatalogUser" Height="450" Width="800">
+        Title="Каталог" Height="450" Width="800">
     <Grid>
         <Label x:Name="UserLabel" Content="Добро пожаловать," HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Height="25" Width="126"/>
         <Button x:Name="LogoutUserBTN" Content="Выйти" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="LogoutManagerBTN_Click"/>
-       
-        <Image x:Name="FirstProductIMG" Source="/img/picture.png" HorizontalAlignment="Left" Height="76" Margin="48,90,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="SecondProductIMG" Source="/img/picture.png" HorizontalAlignment="Left" Height="77" Margin="48,180,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="ThirdfProductIMG" Source="/img/picture.png" HorizontalAlignment="Left" Height="77" Margin="48,270,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="SearchUserBOX" HorizontalAlignment="Left" Margin="134,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="SearchUserLabel" Content="Поиск" HorizontalAlignment="Left" Margin="85,34,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="FiltrBOX" HorizontalAlignment="Left" Margin="289,38,0,0" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Image x:Name="FirstProductIMG" Source="/img/picture.png" HorizontalAlignment="Left" Height="85" Margin="26,72,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label x:Name="FirstNameTovar" HorizontalAlignment="Left" Margin="154,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="FirstDescription" HorizontalAlignment="Left" Margin="154,88,0,0" VerticalAlignment="Top" Height="22" Width="472"/>
+        <Label x:Name="FirstManufacturer" Content="Производитель:" HorizontalAlignment="Left" Margin="154,110,0,0" VerticalAlignment="Top" Height="26" Width="100"/>
+        <Label x:Name="FirstCost" Content="Цена:" HorizontalAlignment="Left" Margin="154,135,0,0" VerticalAlignment="Top" Height="26" Width="40" RenderTransformOrigin="0.325,0.591"/>
+        <Label x:Name="FirstQuantity" Content="Кол-во на складе:" HorizontalAlignment="Left" Margin="631,85,0,0" VerticalAlignment="Top" Height="25" Width="114"/>
+        <Image x:Name="SecondProductIMG" Source="/img/picture.png" HorizontalAlignment="Left" Height="85" Margin="26,177,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label x:Name="SecondNameTovar" HorizontalAlignment="Left" Margin="154,177,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SecondDescription" HorizontalAlignment="Left" Margin="154,193,0,0" VerticalAlignment="Top" Height="22" Width="472"/>
+        <Label x:Name="SecondManufacturer" Content="Производитель:" HorizontalAlignment="Left" Margin="154,216,0,0" VerticalAlignment="Top" Height="26" Width="100"/>
+        <Label x:Name="SecondCost" Content="Цена:" HorizontalAlignment="Left" Margin="154,241,0,0" VerticalAlignment="Top" Height="26" Width="40" RenderTransformOrigin="0.325,0.591"/>
+        <Label x:Name="SecondQuantity" Content="Кол-во на складе:" HorizontalAlignment="Left" Margin="631,193,0,0" VerticalAlignment="Top" Height="24" Width="114"/>
+        <Image x:Name="ThirdfProductIMG" Source="/img/picture.png" HorizontalAlignment="Left" Height="87" Margin="26,284,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label x:Name="ThirdNameTovar" HorizontalAlignment="Left" Margin="154,284,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ThirdDescription" HorizontalAlignment="Left" Margin="154,300,0,0" VerticalAlignment="Top" Height="22" Width="472"/>
+        <Label x:Name="ThirdManufacturer" Content="Производитель:" HorizontalAlignment="Left" Margin="154,322,0,0" VerticalAlignment="Top" Height="26" Width="100"/>
+        <Label x:Name="ThirdCost" Content="Цена:" HorizontalAlignment="Left" Margin="154,348,0,0" VerticalAlignment="Top" Height="26" Width="40" RenderTransformOrigin="0.325,0.591"/>
+        <Label x:Name="ThirdQuantity" Content="Кол-во на складе:" HorizontalAlignment="Left" Margin="631,298,0,0" VerticalAlignment="Top" Height="24" Width="114"/>
+        <Button x:Name="CartBTN" Content="Корзина" HorizontalAlignment="Left" Margin="717,403,0,0" VerticalAlignment="Top" Width="73" Height="21" Click="CartBTN_Click"/>
     </Grid>
 </Window>

@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Авторизация" Height="450" Width="800">
     <Grid>
-        <Button Content="Войти" x:Name="LogBTN"  HorizontalAlignment="Left" Margin="353,265,0,0" VerticalAlignment="Top" Click="LogBTN_Click" Height="28" Width="116"/>
-        <TextBox x:Name="LoginBOX" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" Height="25" Margin="317,175,0,0"/>
-        <PasswordBox x:Name="PasswordBOX" HorizontalAlignment="Left" Margin="317,218,0,0" VerticalAlignment="Top" Width="188" Height="25"/>
-        <Label  Content="Авторизация" HorizontalAlignment="Left" Margin="370,137,0,0" VerticalAlignment="Top" Height="29" Width="82"/>
+        <Button Content="Войти" x:Name="LogBTN"  HorizontalAlignment="Left" Margin="338,265,0,0" VerticalAlignment="Top" Click="LogBTN_Click" Height="28" Width="116"/>
+        <TextBox x:Name="LoginBOX" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" Height="25" Margin="302,175,0,0"/>
+        <PasswordBox x:Name="PasswordBOX" HorizontalAlignment="Left" Margin="302,218,0,0" VerticalAlignment="Top" Width="188" Height="25"/>
+        <Label  Content="Авторизация" HorizontalAlignment="Left" Margin="355,137,0,0" VerticalAlignment="Top" Height="29" Width="82"/>
         <Button x:Name="WithoutLogBTN" Content="Продолжить без авторизации" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="29" Width="183" Click="WithoutLogBTN_Click"/>
-        <Label x:Name="LogLabel" Content="Логин" HorizontalAlignment="Left" Margin="268,175,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="PassLabel" Content="Пароль" HorizontalAlignment="Left" Margin="261,217,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LogLabel" Content="Логин" HorizontalAlignment="Left" Margin="253,175,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PassLabel" Content="Пароль" HorizontalAlignment="Left" Margin="246,217,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

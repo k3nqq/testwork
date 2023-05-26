@@ -6,8 +6,22 @@
         xmlns:local="clr-namespace:Session1"
         mc:Ignorable="d"
         Title="Панель Администратора" Height="450" Width="800">
-    <Grid>
+    <Grid Height="434" VerticalAlignment="Bottom">
         <Label x:Name="AdminLabel" Content="Добро пожаловать," HorizontalAlignment="Left" Margin="500,10,0,0" VerticalAlignment="Top" Height="25" Width="126"/>
         <Button x:Name="LogoutAdminBTN" Content="Выйти" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="LogoutAdminBTN_Click"/>
+        
+        <Button x:Name="AddToBTN" Content="Добавить товар" HorizontalAlignment="Left" Margin="10,398,0,0" VerticalAlignment="Top" Width="109" Click="AddToBTN_Click"/>
+        <Button x:Name="EditToBTN" Content="Изменить товар" HorizontalAlignment="Left" Margin="124,398,0,0" VerticalAlignment="Top" Width="106" Click="EditToBTN_Click"/>
+        <Button x:Name="DeleteBTN" Content="Удалить товар" HorizontalAlignment="Left" Margin="235,398,0,0" VerticalAlignment="Top" Width="106"/>
+        <Button x:Name="ImportBTN" Content="Импорт" HorizontalAlignment="Left" Margin="573,398,0,16" Width="106"/>
+        <Button x:Name="ExportBTN" Content="Экспорт" HorizontalAlignment="Left" Margin="684,398,0,0" VerticalAlignment="Top" Width="106"/>
+        <Grid Margin="0,0,0,53"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,40,10,53" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
